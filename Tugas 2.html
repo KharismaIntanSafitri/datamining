@@ -54,7 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="T3. Classificasion" href="Tugas%203.html" />
+    <link rel="next" title="T3. Classter K-NN" href="Tugas%203.html" />
     <link rel="prev" title="T1. Deskriptif Statistika" href="Tugas%201.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -138,7 +138,7 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%203.html">
    <strong>
-    T3. Classificasion
+    T3. Classter K-NN
    </strong>
   </a>
  </li>
@@ -455,7 +455,8 @@ Tanggal : 05 September 2022</p>
 <p>untuk membaca dataset kita bisa mengunduh dataset dari internet kemudian menguplod dataset tersebut kedalam repository github. setelah itu kita menyalin link raw dataset yang ada dalam repo untuk dibaca dengan cara dibawah ini.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/KharismaIntanSafitri/datamining/main/IRIS.csv&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">mode</span><span class="o">.</span><span class="n">chained_assignment</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/KharismaIntanSafitri/datamining/main/IRIS.csv&quot;</span>
 <span class="n">dataset</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -492,7 +493,7 @@ memory usage: 6.0+ KB
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-0d9fe536-b9d9-4b7e-8a48-7e9965291f09">
+  <div id="df-4d821af2-9717-4afb-9ff6-9bc5ea66e14d">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -612,7 +613,7 @@ memory usage: 6.0+ KB
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-0d9fe536-b9d9-4b7e-8a48-7e9965291f09')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-4d821af2-9717-4afb-9ff6-9bc5ea66e14d')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -663,12 +664,12 @@ memory usage: 6.0+ KB
 
       <script>
         const buttonEl =
-          document.querySelector('#df-0d9fe536-b9d9-4b7e-8a48-7e9965291f09 button.colab-df-convert');
+          document.querySelector('#df-4d821af2-9717-4afb-9ff6-9bc5ea66e14d button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-0d9fe536-b9d9-4b7e-8a48-7e9965291f09');
+          const element = document.querySelector('#df-4d821af2-9717-4afb-9ff6-9bc5ea66e14d');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -731,34 +732,8 @@ memory usage: 6.0+ KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:1: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  &quot;&quot;&quot;Entry point for launching an IPython kernel.
-/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:2: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  
-/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:3: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  This is separate from the ipykernel package so we can avoid doing imports until
-/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:4: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  after removing the cwd from sys.path.
-</pre></div>
-</div>
 <div class="output text_html">
-  <div id="df-b8b2d475-0ba4-49cf-b07b-6f51312a6598">
+  <div id="df-90d09ec5-6af4-420c-b8b2-1e60e47a6113">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -926,7 +901,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </table>
 <p>150 rows × 9 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-b8b2d475-0ba4-49cf-b07b-6f51312a6598')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-90d09ec5-6af4-420c-b8b2-1e60e47a6113')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -977,12 +952,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
       <script>
         const buttonEl =
-          document.querySelector('#df-b8b2d475-0ba4-49cf-b07b-6f51312a6598 button.colab-df-convert');
+          document.querySelector('#df-90d09ec5-6af4-420c-b8b2-1e60e47a6113 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-b8b2d475-0ba4-49cf-b07b-6f51312a6598');
+          const element = document.querySelector('#df-90d09ec5-6af4-420c-b8b2-1e60e47a6113');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1045,34 +1020,8 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:1: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  &quot;&quot;&quot;Entry point for launching an IPython kernel.
-/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:2: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  
-/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:3: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  This is separate from the ipykernel package so we can avoid doing imports until
-/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:4: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  after removing the cwd from sys.path.
-</pre></div>
-</div>
 <div class="output text_html">
-  <div id="df-abf23c4c-1cc4-4dd0-931d-6ff4bb2b391c">
+  <div id="df-7dbb2d99-fef9-409d-be86-05c44a3e0277">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1240,7 +1189,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </table>
 <p>150 rows × 9 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-abf23c4c-1cc4-4dd0-931d-6ff4bb2b391c')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-7dbb2d99-fef9-409d-be86-05c44a3e0277')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1291,12 +1240,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
       <script>
         const buttonEl =
-          document.querySelector('#df-abf23c4c-1cc4-4dd0-931d-6ff4bb2b391c button.colab-df-convert');
+          document.querySelector('#df-7dbb2d99-fef9-409d-be86-05c44a3e0277 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-abf23c4c-1cc4-4dd0-931d-6ff4bb2b391c');
+          const element = document.querySelector('#df-7dbb2d99-fef9-409d-be86-05c44a3e0277');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1331,7 +1280,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-0767c92e-6be9-4b43-9fbe-6738b7ec0d2e">
+  <div id="df-e84de891-22b7-4afb-918a-58bf2713f94a">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1390,7 +1339,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-0767c92e-6be9-4b43-9fbe-6738b7ec0d2e')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-e84de891-22b7-4afb-918a-58bf2713f94a')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1441,12 +1390,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
       <script>
         const buttonEl =
-          document.querySelector('#df-0767c92e-6be9-4b43-9fbe-6738b7ec0d2e button.colab-df-convert');
+          document.querySelector('#df-e84de891-22b7-4afb-918a-58bf2713f94a button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-0767c92e-6be9-4b43-9fbe-6738b7ec0d2e');
+          const element = document.querySelector('#df-e84de891-22b7-4afb-918a-58bf2713f94a');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1475,16 +1424,6 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:2: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1498,7 +1437,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-69ee99a7-579f-451d-8a34-92331b88487e">
+  <div id="df-5a0d134b-70f3-4a62-af53-feb3a3f5f961">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1582,7 +1521,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-69ee99a7-579f-451d-8a34-92331b88487e')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-5a0d134b-70f3-4a62-af53-feb3a3f5f961')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1633,12 +1572,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
       <script>
         const buttonEl =
-          document.querySelector('#df-69ee99a7-579f-451d-8a34-92331b88487e button.colab-df-convert');
+          document.querySelector('#df-5a0d134b-70f3-4a62-af53-feb3a3f5f961 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-69ee99a7-579f-451d-8a34-92331b88487e');
+          const element = document.querySelector('#df-5a0d134b-70f3-4a62-af53-feb3a3f5f961');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1841,7 +1780,7 @@ Entropy D =  0.993707106604508
     <a class='right-next' id="next-link" href="Tugas%203.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>T3. Classificasion</strong></p>
+        <p class="prev-next-title"><strong>T3. Classter K-NN</strong></p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
