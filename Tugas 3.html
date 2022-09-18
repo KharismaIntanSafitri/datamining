@@ -397,6 +397,10 @@ Tanggal : 12 September 2022</p>
 <section id="topik-data">
 <h2><strong>Topik data:</strong><a class="headerlink" href="#topik-data" title="Permalink to this headline">#</a></h2>
 <p>Pengelompokan jenis Bunga Iris berdasarkan panjang dan lebar kelopak serta daun kelopak.</p>
+<p>KNN (K-Nearest Neighbor) adalah algoritma klasifikasi terawasi sederhana yang dapat kita gunakan untuk menetapkan kelas ke titik data baru. Hal ini dapat digunakan untuk regresi juga, KNN tidak membuat asumsi pada distribusi data, sehingga non-parametrik. Itu menyimpan semua data pelatihan untuk membuat prediksi masa depan dengan menghitung kesamaan antara sampel input dan setiap instance pelatihan.</p>
+<p>kali ini membangun model KNN yang mengklasifikasikan spesies baru berdasarkan ukuran sepal dan petal. Dataset Iris tersedia di scikit-learn dan kita dapat menggunakannya untuk membangun KNN kita.</p>
+<p><strong>Langkah1: Impor data yang diperlukan dan periksa fitur-fiturnya.</strong></p>
+<p>Impor fungsi load_iris dari modul set data scikit-learen dan buat objek iris Bunch (bunch adalah tipe objek khusus scikitlearn untuk menyimpan set data dan atributnya).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_iris</span>
@@ -584,6 +588,7 @@ Tanggal : 12 September 2022</p>
 </div>
 </div>
 </div>
+<p>Setiap pengamatan mewakili satu bunga dan 4 kolom mewakili 4 pengukuran. Kita dapat melihat fitur (ukuran) di bawah atribut ‘data’, sedangkan label di bawah ‘fitur_nama’. Seperti yang dapat kita lihat di bawah, label/respons dikodekan sebagai 0,1 dan 2. Karena fitur dan repose harus numerik (Numpy arrays) untuk model scikit-learn dan mereka harus memiliki bentuk tertentu.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">feature_names</span><span class="p">)</span>
@@ -634,6 +639,8 @@ Tanggal : 12 September 2022</p>
 </div>
 </div>
 </div>
+<p><strong>Langkah2: Pisahkan data dan Latih Modelnya.</strong></p>
+<p>Pelatihan dan pengujian pada data yang sama bukanlah pendekatan yang optimal, jadi kami membagi data menjadi dua bagian, set pelatihan dan set pengujian. Kami menggunakan fungsi ‘train_test_split’ untuk membagi data. Parameter opsional ‘test-size’ menentukan persentase pemisahan. Parameter ‘random_state’ membuat data dibagi dengan cara yang sama setiap kali Anda menjalankan. Karena kami melatih dan menguji pada kumpulan data yang berbeda, akurasi pengujian yang dihasilkan akan menjadi perkiraan yang lebih baik tentang seberapa baik kemungkinan model untuk tampil pada data yang tidak terlihat.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span>
@@ -685,6 +692,7 @@ Tanggal : 12 September 2022</p>
 </div>
 </div>
 </div>
+<p>Metode ‘fit’ digunakan untuk melatih model pada data training (X_train,y_train) dan metode ‘predict’ untuk melakukan pengujian pada data testing (X_test). Memilih nilai K yang optimal sangat penting, jadi kami menyesuaikan dan menguji model untuk nilai yang berbeda untuk K (dari 1 hingga 25) menggunakan for loop dan mencatat akurasi pengujian KNN dalam variabel (skor).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import the KNeighborsClassifier class from sklearn</span>
@@ -742,6 +750,7 @@ Tanggal : 12 September 2022</p>
 </div>
 </div>
 </div>
+<p>Secara umum akurasi Training meningkat seiring dengan meningkatnya kompleksitas model, untuk KNN kompleksitas model ditentukan oleh nilai K. Nilai K yang lebih besar menyebabkan batas keputusan yang lebih halus (model yang kurang kompleks). K yang lebih kecil mengarah ke model yang lebih kompleks (dapat menyebabkan overfitting). Pengujian akurasi menghukum model yang terlalu kompleks (over fitting) atau tidak cukup kompleks (underfit). Kami mendapatkan akurasi pengujian maksimum ketika model memiliki tingkat kompleksitas yang tepat, dalam kasus kami, kami dapat melihat bahwa untuk nilai K 3 hingga 19 akurasi model kami adalah 96,6%.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
@@ -758,9 +767,10 @@ Tanggal : 12 September 2022</p>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Testing Accuracy&#39;)
 </pre></div>
 </div>
-<img alt="_images/Tugas 3_18_1.png" src="_images/Tugas 3_18_1.png" />
+<img alt="_images/Tugas 3_27_1.png" src="_images/Tugas 3_27_1.png" />
 </div>
 </div>
+<p>Untuk model akhir, dapat memilih nilai optimal K sebagai 5 (yang berada di antara 3 dan 19) dan melatih kembali model dengan semua data yang tersedia. Dan itu akan menjadi model terakhir yang siap untuk membuat prediksi.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">knn</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
