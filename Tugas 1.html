@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>T1. Deskriptif Statistika &#8212; Penambangan Data</title>
+    <title>Deskriptif &#8212; Penambangan Data</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -124,7 +124,7 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    <strong>
-    T1. Deskriptif Statistika
+    Deskriptif
    </strong>
   </a>
  </li>
@@ -150,6 +150,20 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="Tugas%205.html">
+   <strong>
+    T5. Naive Bayes
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Tugas%206.html">
+   <strong>
+    T6. Decision Tree
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="UTS%20K-NN.html">
    <strong>
     UTS K-Nearest Neighbor
@@ -164,9 +178,21 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="Tugas%205.html">
+  <a class="reference internal" href="Tugas%207.html">
+   T7. Preprocessing &amp; Normalisasi
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Tugas%208.html">
    <strong>
-    T5. Pemodelan
+    T8. Bagging
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Tugas%209.html">
+   <strong>
+    T9. Ensemble Stacking
    </strong>
   </a>
  </li>
@@ -377,13 +403,6 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#topik-data">
-   <strong>
-    Topik data:
-   </strong>
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#membaca-data-dari-url-dataset-online">
    <strong>
     1. Membaca data dari url dataset online
@@ -443,7 +462,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>T1. Deskriptif Statistika</h1>
+                <h1>Deskriptif</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -453,13 +472,6 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#topik-data">
-   <strong>
-    Topik data:
-   </strong>
-  </a>
- </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#membaca-data-dari-url-dataset-online">
    <strong>
@@ -521,14 +533,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="t1-deskriptif-statistika">
-<h1><strong>T1. Deskriptif Statistika</strong><a class="headerlink" href="#t1-deskriptif-statistika" title="Permalink to this headline">#</a></h1>
-<p>Nama  : Kharisma Intan Safitri<br />
-NIM   : 200411100010<br />
-Kelas : Penambangan Data A<br />
-Tanggal : 29 Agustus 2022</p>
-<section id="topik-data">
-<h2><strong>Topik data:</strong><a class="headerlink" href="#topik-data" title="Permalink to this headline">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="deskriptif">
+<h1><strong>Deskriptif</strong><a class="headerlink" href="#deskriptif" title="Permalink to this headline">#</a></h1>
 <p>Pengelompokan jenis Bunga Iris berdasarkan panjang dan lebar kelopak serta daun kelopak.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -540,7 +546,6 @@ Tanggal : 29 Agustus 2022</p>
 </div>
 </div>
 </div>
-</section>
 <section id="membaca-data-dari-url-dataset-online">
 <h2><strong>1. Membaca data dari url dataset online</strong><a class="headerlink" href="#membaca-data-dari-url-dataset-online" title="Permalink to this headline">#</a></h2>
 <p>untuk membaca dataset kita bisa mengunduh dataset dari internet kemudian menguplod dataset tersebut kedalam repository github. setelah itu kita menyalin link raw dataset yang ada dalam repo untuk dibaca dengan cara dibawah ini.</p>
@@ -583,7 +588,7 @@ memory usage: 6.0+ KB
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-76219779-a8b3-4483-b83d-ab92e15eb902">
+  <div id="df-99231b3f-0882-4d30-8c50-71c8c47aa056">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -703,7 +708,7 @@ memory usage: 6.0+ KB
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-76219779-a8b3-4483-b83d-ab92e15eb902')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-99231b3f-0882-4d30-8c50-71c8c47aa056')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -754,12 +759,12 @@ memory usage: 6.0+ KB
 
       <script>
         const buttonEl =
-          document.querySelector('#df-76219779-a8b3-4483-b83d-ab92e15eb902 button.colab-df-convert');
+          document.querySelector('#df-99231b3f-0882-4d30-8c50-71c8c47aa056 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-76219779-a8b3-4483-b83d-ab92e15eb902');
+          const element = document.querySelector('#df-99231b3f-0882-4d30-8c50-71c8c47aa056');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});

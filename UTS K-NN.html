@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="UTS Desision Tree" href="UTS%20Desison%20Tree.html" />
-    <link rel="prev" title="T4. K-Mean Clustering" href="Tugas%204.html" />
+    <link rel="prev" title="T6. Decision Tree" href="Tugas%206.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -122,7 +122,7 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%201.html">
    <strong>
-    T1. Deskriptif Statistika
+    Deskriptif
    </strong>
   </a>
  </li>
@@ -147,6 +147,20 @@ const thebe_selector_output = ".output, .cell_output"
    </strong>
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Tugas%205.html">
+   <strong>
+    T5. Naive Bayes
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Tugas%206.html">
+   <strong>
+    T6. Decision Tree
+   </strong>
+  </a>
+ </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    <strong>
@@ -162,9 +176,21 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="Tugas%205.html">
+  <a class="reference internal" href="Tugas%207.html">
+   T7. Preprocessing &amp; Normalisasi
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Tugas%208.html">
    <strong>
-    T5. Pemodelan
+    T8. Bagging
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Tugas%209.html">
+   <strong>
+    T9. Ensemble Stacking
    </strong>
   </a>
  </li>
@@ -513,7 +539,7 @@ Tanggal : 17 Oktober 2022</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-2f5268a4-dac3-4f60-a921-1380052e62fd">
+  <div id="df-44b981a8-05cd-4c0e-9b41-7959c6da16fc">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -614,7 +640,7 @@ Tanggal : 17 Oktober 2022</p>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-2f5268a4-dac3-4f60-a921-1380052e62fd')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-44b981a8-05cd-4c0e-9b41-7959c6da16fc')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -665,12 +691,12 @@ Tanggal : 17 Oktober 2022</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-2f5268a4-dac3-4f60-a921-1380052e62fd button.colab-df-convert');
+          document.querySelector('#df-44b981a8-05cd-4c0e-9b41-7959c6da16fc button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-2f5268a4-dac3-4f60-a921-1380052e62fd');
+          const element = document.querySelector('#df-44b981a8-05cd-4c0e-9b41-7959c6da16fc');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -700,7 +726,7 @@ Tanggal : 17 Oktober 2022</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-12d33501-3b88-4ea9-b04b-24a7d8574693">
+  <div id="df-ba95c172-9fbd-40f4-857e-3c53e82b58c8">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -807,7 +833,7 @@ Tanggal : 17 Oktober 2022</p>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-12d33501-3b88-4ea9-b04b-24a7d8574693')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-ba95c172-9fbd-40f4-857e-3c53e82b58c8')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -858,12 +884,12 @@ Tanggal : 17 Oktober 2022</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-12d33501-3b88-4ea9-b04b-24a7d8574693 button.colab-df-convert');
+          document.querySelector('#df-ba95c172-9fbd-40f4-857e-3c53e82b58c8 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-12d33501-3b88-4ea9-b04b-24a7d8574693');
+          const element = document.querySelector('#df-ba95c172-9fbd-40f4-857e-3c53e82b58c8');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1140,11 +1166,11 @@ sehat
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="Tugas%204.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="Tugas%206.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><strong>T4. K-Mean Clustering</strong></p>
+            <p class="prev-next-title"><strong>T6. Decision Tree</strong></p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="UTS%20Desison%20Tree.html" title="next page">
