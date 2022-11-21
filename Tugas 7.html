@@ -153,16 +153,12 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="UTS%20K-NN.html">
-   <strong>
-    UTS K-Nearest Neighbor
-   </strong>
+   UTS K-Nearest Neighbor
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="UTS%20Desison%20Tree.html">
-   <strong>
-    UTS Desision Tree
-   </strong>
+   UTS Desision Tree
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -391,90 +387,76 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Preprocessing &amp; Normalisasi Diabetic
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#topik-data">
+   <strong>
+    Topik data:
+   </strong>
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#topik-data">
-     <strong>
-      Topik data:
-     </strong>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rumus-prepocessing-data-min-max">
+   Rumus prepocessing data Min Max
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#save-model-prepocessing">
+   Save model prepocessing
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#encoder-label">
+   Encoder Label
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#split-dataset">
+   Split dataset
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#inisialisasi-model-knn">
+   Inisialisasi model knn
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tanpa-data-normalisasi">
+     Tanpa data Normalisasi
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#rumus-prepocessing-data-min-max">
-     Rumus prepocessing data Min Max
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#save-model-k-nn-tanpa-normalisasi">
+     Save Model K-NN Tanpa Normalisasi
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#save-model-prepocessing">
-     Save model prepocessing
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#save-model-k-nn-normalisasi">
+     Save Model K-NN Normalisasi
     </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#encoder-label">
-     Encoder Label
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#split-dataset">
-     Split dataset
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#inisialisasi-model-knn">
-     Inisialisasi model knn
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#tanpa-data-normalisasi">
-       Tanpa data Normalisasi
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#save-model-k-nn-tanpa-normalisasi">
-       Save Model K-NN Tanpa Normalisasi
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#save-model-k-nn-normalisasi">
-       Save Model K-NN Normalisasi
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#predict-input">
-     Predict Input
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#load-model-normalisasi">
-       Load Model Normalisasi
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#load-model-knn">
-       Load Model KNN
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#load-model-gausian">
-       Load Model Gausian
-      </a>
-     </li>
-    </ul>
    </li>
   </ul>
  </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#lanjutan">
-   <strong>
-    Lanjutan
-   </strong>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#predict-input">
+   Predict Input
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#load-model-normalisasi">
+     Load Model Normalisasi
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#load-model-knn">
+     Load Model KNN
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#load-model-gausian">
+     Load Model Gausian
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -495,90 +477,76 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Preprocessing &amp; Normalisasi Diabetic
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#topik-data">
+   <strong>
+    Topik data:
+   </strong>
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#topik-data">
-     <strong>
-      Topik data:
-     </strong>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rumus-prepocessing-data-min-max">
+   Rumus prepocessing data Min Max
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#save-model-prepocessing">
+   Save model prepocessing
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#encoder-label">
+   Encoder Label
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#split-dataset">
+   Split dataset
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#inisialisasi-model-knn">
+   Inisialisasi model knn
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tanpa-data-normalisasi">
+     Tanpa data Normalisasi
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#rumus-prepocessing-data-min-max">
-     Rumus prepocessing data Min Max
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#save-model-k-nn-tanpa-normalisasi">
+     Save Model K-NN Tanpa Normalisasi
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#save-model-prepocessing">
-     Save model prepocessing
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#save-model-k-nn-normalisasi">
+     Save Model K-NN Normalisasi
     </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#encoder-label">
-     Encoder Label
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#split-dataset">
-     Split dataset
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#inisialisasi-model-knn">
-     Inisialisasi model knn
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#tanpa-data-normalisasi">
-       Tanpa data Normalisasi
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#save-model-k-nn-tanpa-normalisasi">
-       Save Model K-NN Tanpa Normalisasi
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#save-model-k-nn-normalisasi">
-       Save Model K-NN Normalisasi
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#predict-input">
-     Predict Input
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#load-model-normalisasi">
-       Load Model Normalisasi
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#load-model-knn">
-       Load Model KNN
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#load-model-gausian">
-       Load Model Gausian
-      </a>
-     </li>
-    </ul>
    </li>
   </ul>
  </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#lanjutan">
-   <strong>
-    Lanjutan
-   </strong>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#predict-input">
+   Predict Input
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#load-model-normalisasi">
+     Load Model Normalisasi
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#load-model-knn">
+     Load Model KNN
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#load-model-gausian">
+     Load Model Gausian
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -665,7 +633,7 @@ Tanggal :</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-a72daf11-6d67-43f9-acc1-7d210470035c">
+  <div id="df-64533a86-5856-42b5-ae45-b0e8b7b7fff2">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -965,7 +933,7 @@ Tanggal :</p>
 </table>
 <p>1151 rows × 20 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-a72daf11-6d67-43f9-acc1-7d210470035c')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-64533a86-5856-42b5-ae45-b0e8b7b7fff2')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1016,12 +984,12 @@ Tanggal :</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-a72daf11-6d67-43f9-acc1-7d210470035c button.colab-df-convert');
+          document.querySelector('#df-64533a86-5856-42b5-ae45-b0e8b7b7fff2 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-a72daf11-6d67-43f9-acc1-7d210470035c');
+          const element = document.querySelector('#df-64533a86-5856-42b5-ae45-b0e8b7b7fff2');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1051,7 +1019,7 @@ Tanggal :</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-1e71ca2d-e38d-4780-840c-99d063e25a25">
+  <div id="df-776487a6-dfd5-44be-bf87-23f1910aee20">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1339,7 +1307,7 @@ Tanggal :</p>
 </table>
 <p>1151 rows × 19 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-1e71ca2d-e38d-4780-840c-99d063e25a25')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-776487a6-dfd5-44be-bf87-23f1910aee20')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1390,12 +1358,12 @@ Tanggal :</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-1e71ca2d-e38d-4780-840c-99d063e25a25 button.colab-df-convert');
+          document.querySelector('#df-776487a6-dfd5-44be-bf87-23f1910aee20 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-1e71ca2d-e38d-4780-840c-99d063e25a25');
+          const element = document.querySelector('#df-776487a6-dfd5-44be-bf87-23f1910aee20');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1440,7 +1408,7 @@ Tanggal :</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-72e984ca-6542-45cb-8c1f-9f3d8c99e7a6">
+  <div id="df-551c9b72-703b-4cdc-8e70-79c9b7d29eb6">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1705,7 +1673,7 @@ Tanggal :</p>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-72e984ca-6542-45cb-8c1f-9f3d8c99e7a6')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-551c9b72-703b-4cdc-8e70-79c9b7d29eb6')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1756,12 +1724,12 @@ Tanggal :</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-72e984ca-6542-45cb-8c1f-9f3d8c99e7a6 button.colab-df-convert');
+          document.querySelector('#df-551c9b72-703b-4cdc-8e70-79c9b7d29eb6 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-72e984ca-6542-45cb-8c1f-9f3d8c99e7a6');
+          const element = document.querySelector('#df-551c9b72-703b-4cdc-8e70-79c9b7d29eb6');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2165,7 +2133,7 @@ Tanggal :</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-3968e819-1f01-464c-b7b8-64f01be4db6b">
+  <div id="df-538c250f-e3c0-49e4-9ecc-ec03239dd35d">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2430,7 +2398,7 @@ Tanggal :</p>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-3968e819-1f01-464c-b7b8-64f01be4db6b')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-538c250f-e3c0-49e4-9ecc-ec03239dd35d')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2481,12 +2449,12 @@ Tanggal :</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-3968e819-1f01-464c-b7b8-64f01be4db6b button.colab-df-convert');
+          document.querySelector('#df-538c250f-e3c0-49e4-9ecc-ec03239dd35d button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-3968e819-1f01-464c-b7b8-64f01be4db6b');
+          const element = document.querySelector('#df-538c250f-e3c0-49e4-9ecc-ec03239dd35d');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2553,11 +2521,7 @@ Tanggal :</p>
 </div>
 </div>
 </div>
-</section>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="lanjutan">
-<h1><strong>Lanjutan</strong><a class="headerlink" href="#lanjutan" title="Permalink to this headline">#</a></h1>
+<p>Lanjutan</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
@@ -2622,7 +2586,7 @@ Tanggal :</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-8004feb2-02bc-4317-8433-1d7ac6bffdb8">
+  <div id="df-e84c9086-7f7b-4332-b8b5-df133e621741">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2922,7 +2886,7 @@ Tanggal :</p>
 </table>
 <p>1151 rows × 20 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-8004feb2-02bc-4317-8433-1d7ac6bffdb8')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-e84c9086-7f7b-4332-b8b5-df133e621741')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2973,12 +2937,12 @@ Tanggal :</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-8004feb2-02bc-4317-8433-1d7ac6bffdb8 button.colab-df-convert');
+          document.querySelector('#df-e84c9086-7f7b-4332-b8b5-df133e621741 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-8004feb2-02bc-4317-8433-1d7ac6bffdb8');
+          const element = document.querySelector('#df-e84c9086-7f7b-4332-b8b5-df133e621741');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -3008,7 +2972,7 @@ Tanggal :</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-36212c72-cea4-4f72-9a8e-c54d151ef321">
+  <div id="df-732717d0-4c93-4ce2-b473-3a60588ac4ee">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -3296,7 +3260,7 @@ Tanggal :</p>
 </table>
 <p>1151 rows × 19 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-36212c72-cea4-4f72-9a8e-c54d151ef321')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-732717d0-4c93-4ce2-b473-3a60588ac4ee')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -3347,12 +3311,12 @@ Tanggal :</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-36212c72-cea4-4f72-9a8e-c54d151ef321 button.colab-df-convert');
+          document.querySelector('#df-732717d0-4c93-4ce2-b473-3a60588ac4ee button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-36212c72-cea4-4f72-9a8e-c54d151ef321');
+          const element = document.querySelector('#df-732717d0-4c93-4ce2-b473-3a60588ac4ee');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -3395,7 +3359,7 @@ Tanggal :</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-aded3914-88e5-4a04-8eeb-b6aed6c6f8ec">
+  <div id="df-85cbec2e-215d-4879-8e65-96f42f29cac7">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -3660,7 +3624,7 @@ Tanggal :</p>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-aded3914-88e5-4a04-8eeb-b6aed6c6f8ec')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-85cbec2e-215d-4879-8e65-96f42f29cac7')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -3711,12 +3675,12 @@ Tanggal :</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-aded3914-88e5-4a04-8eeb-b6aed6c6f8ec button.colab-df-convert');
+          document.querySelector('#df-85cbec2e-215d-4879-8e65-96f42f29cac7 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-aded3914-88e5-4a04-8eeb-b6aed6c6f8ec');
+          const element = document.querySelector('#df-85cbec2e-215d-4879-8e65-96f42f29cac7');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -3737,6 +3701,8 @@ Tanggal :</p>
   </div>
 </div></div>
 </div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -3770,7 +3736,7 @@ Tanggal :</p>
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><strong>UTS Desision Tree</strong></p>
+            <p class="prev-next-title">UTS Desision Tree</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="Tugas%208.html" title="next page">
