@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>T2. Deskritisasi Data &#8212; Penambangan Data</title>
+    <title>Deskritisasi &#8212; Penambangan Data</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="T3. KNN (K-Nearest Neighbor)" href="Tugas%203.html" />
+    <link rel="next" title="K-Nearest Neighbor" href="Tugas%203.html" />
     <link rel="prev" title="Deskriptif" href="Tugas%201.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -121,44 +121,32 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%201.html">
-   <strong>
-    Deskriptif
-   </strong>
+   Deskriptif
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   <strong>
-    T2. Deskritisasi Data
-   </strong>
+   Deskritisasi
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%203.html">
-   <strong>
-    T3. KNN (K-Nearest Neighbor)
-   </strong>
+   K-Nearest Neighbor
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%204.html">
-   <strong>
-    T4. K-Mean Clustering
-   </strong>
+   K-Mean Clustering
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%205.html">
-   <strong>
-    T5. Naive Bayes
-   </strong>
+   Naive Bayes
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%206.html">
-   <strong>
-    T6. Decision Tree
-   </strong>
+   Decision Tree
   </a>
  </li>
  <li class="toctree-l1">
@@ -177,21 +165,22 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%207.html">
-   T7. Preprocessing &amp; Normalisasi
+   Preprocessing &amp; Normalisasi Diabetic
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%208.html">
-   <strong>
-    T8. Bagging
-   </strong>
+   Bagging
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%209.html">
-   <strong>
-    T9. Ensemble Stacking
-   </strong>
+   Backpropagation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Tugas%2010.html">
+   Linear Regresion
   </a>
  </li>
 </ul>
@@ -416,7 +405,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>T2. Deskritisasi Data</h1>
+                <h1>Deskritisasi</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -443,8 +432,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="t2-deskritisasi-data">
-<h1><strong>T2. Deskritisasi Data</strong><a class="headerlink" href="#t2-deskritisasi-data" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="deskritisasi">
+<h1>Deskritisasi<a class="headerlink" href="#deskritisasi" title="Permalink to this headline">#</a></h1>
 <p>Nama  : Kharisma Intan Safitri<br />
 NIM   : 200411100010<br />
 Kelas : Penambangan Data A<br />
@@ -452,6 +441,9 @@ Tanggal : 05 September 2022</p>
 <section id="topik-data">
 <h2><strong>Topik data:</strong><a class="headerlink" href="#topik-data" title="Permalink to this headline">#</a></h2>
 <p>Pengelompokan jenis Bunga Iris berdasarkan panjang dan lebar kelopak serta daun kelopak.</p>
+<p><strong>Diskritisasi</strong> data digunakan untuk membagi atribut-atribut yang sifatnya kontinu menjadi data dengan interval.</p>
+<p>Hal ini dilakukan karena fitur nilai kontinu cenderung memiliki peluang korelasi yang lebih kecil dengan variabel target. Hal ini karena kita akan kesulitan untuk menafsirkan hasilnya.</p>
+<p>Dengan diskritisasi ini maka kita dapat melakaukan pelebelan berdasrakan transformasi data kontinu menjadi data ordinal.</p>
 <p><strong>Persiapan</strong></p>
 <p align="justify">
 Sipakan dataset yang akan digunakan, setelah menemukan dataset yang berupa numeric dan dataset termasuk data klasifikasi.
@@ -478,7 +470,7 @@ Sipakan dataset yang akan digunakan, setelah menemukan dataset yang berupa numer
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-fae5e677-8df4-4965-b3d5-25ffcef18db6">
+  <div id="df-0cf0295e-0ed0-41fa-be92-7bcfe804e29b">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -598,7 +590,7 @@ Sipakan dataset yang akan digunakan, setelah menemukan dataset yang berupa numer
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-fae5e677-8df4-4965-b3d5-25ffcef18db6')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-0cf0295e-0ed0-41fa-be92-7bcfe804e29b')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -649,12 +641,12 @@ Sipakan dataset yang akan digunakan, setelah menemukan dataset yang berupa numer
 
       <script>
         const buttonEl =
-          document.querySelector('#df-fae5e677-8df4-4965-b3d5-25ffcef18db6 button.colab-df-convert');
+          document.querySelector('#df-0cf0295e-0ed0-41fa-be92-7bcfe804e29b button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-fae5e677-8df4-4965-b3d5-25ffcef18db6');
+          const element = document.querySelector('#df-0cf0295e-0ed0-41fa-be92-7bcfe804e29b');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -706,7 +698,7 @@ Sipakan dataset yang akan digunakan, setelah menemukan dataset yang berupa numer
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-d87b3358-51dd-4e14-9f0f-dc5041888518">
+  <div id="df-223d3484-91ef-48f1-a8d1-1f7693a4ee9e">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -922,7 +914,7 @@ Sipakan dataset yang akan digunakan, setelah menemukan dataset yang berupa numer
 </table>
 <p>150 rows × 13 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-d87b3358-51dd-4e14-9f0f-dc5041888518')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-223d3484-91ef-48f1-a8d1-1f7693a4ee9e')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -973,12 +965,12 @@ Sipakan dataset yang akan digunakan, setelah menemukan dataset yang berupa numer
 
       <script>
         const buttonEl =
-          document.querySelector('#df-d87b3358-51dd-4e14-9f0f-dc5041888518 button.colab-df-convert');
+          document.querySelector('#df-223d3484-91ef-48f1-a8d1-1f7693a4ee9e button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-d87b3358-51dd-4e14-9f0f-dc5041888518');
+          const element = document.querySelector('#df-223d3484-91ef-48f1-a8d1-1f7693a4ee9e');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1022,7 +1014,7 @@ Sipakan dataset yang akan digunakan, setelah menemukan dataset yang berupa numer
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-e986347d-2ddb-410d-a85c-84244251d31b">
+  <div id="df-717654bc-c730-4ba0-ab92-151754325154">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1130,7 +1122,7 @@ Sipakan dataset yang akan digunakan, setelah menemukan dataset yang berupa numer
 </table>
 <p>150 rows × 4 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-e986347d-2ddb-410d-a85c-84244251d31b')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-717654bc-c730-4ba0-ab92-151754325154')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1181,12 +1173,12 @@ Sipakan dataset yang akan digunakan, setelah menemukan dataset yang berupa numer
 
       <script>
         const buttonEl =
-          document.querySelector('#df-e986347d-2ddb-410d-a85c-84244251d31b button.colab-df-convert');
+          document.querySelector('#df-717654bc-c730-4ba0-ab92-151754325154 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-e986347d-2ddb-410d-a85c-84244251d31b');
+          const element = document.querySelector('#df-717654bc-c730-4ba0-ab92-151754325154');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1216,7 +1208,7 @@ Sipakan dataset yang akan digunakan, setelah menemukan dataset yang berupa numer
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-daa99813-2b6a-4c71-8f5b-ac4340054f40">
+  <div id="df-4c499d35-3faf-4767-b24d-fad8208d8450">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1432,7 +1424,7 @@ Sipakan dataset yang akan digunakan, setelah menemukan dataset yang berupa numer
 </table>
 <p>150 rows × 13 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-daa99813-2b6a-4c71-8f5b-ac4340054f40')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-4c499d35-3faf-4767-b24d-fad8208d8450')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1483,12 +1475,12 @@ Sipakan dataset yang akan digunakan, setelah menemukan dataset yang berupa numer
 
       <script>
         const buttonEl =
-          document.querySelector('#df-daa99813-2b6a-4c71-8f5b-ac4340054f40 button.colab-df-convert');
+          document.querySelector('#df-4c499d35-3faf-4767-b24d-fad8208d8450 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-daa99813-2b6a-4c71-8f5b-ac4340054f40');
+          const element = document.querySelector('#df-4c499d35-3faf-4767-b24d-fad8208d8450');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1526,7 +1518,7 @@ Sipakan dataset yang akan digunakan, setelah menemukan dataset yang berupa numer
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-c2f46433-014f-480d-8616-fb9b19ebf846">
+  <div id="df-afa8c861-64a5-4994-94b5-6b4dc43e7a35">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1610,7 +1602,7 @@ Sipakan dataset yang akan digunakan, setelah menemukan dataset yang berupa numer
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-c2f46433-014f-480d-8616-fb9b19ebf846')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-afa8c861-64a5-4994-94b5-6b4dc43e7a35')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1661,12 +1653,12 @@ Sipakan dataset yang akan digunakan, setelah menemukan dataset yang berupa numer
 
       <script>
         const buttonEl =
-          document.querySelector('#df-c2f46433-014f-480d-8616-fb9b19ebf846 button.colab-df-convert');
+          document.querySelector('#df-afa8c861-64a5-4994-94b5-6b4dc43e7a35 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-c2f46433-014f-480d-8616-fb9b19ebf846');
+          const element = document.querySelector('#df-afa8c861-64a5-4994-94b5-6b4dc43e7a35');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1842,13 +1834,13 @@ Sipakan dataset yang akan digunakan, setelah menemukan dataset yang berupa numer
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><strong>Deskriptif</strong></p>
+            <p class="prev-next-title">Deskriptif</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="Tugas%203.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>T3. KNN (K-Nearest Neighbor)</strong></p>
+        <p class="prev-next-title">K-Nearest Neighbor</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

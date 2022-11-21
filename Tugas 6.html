@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>T6. Decision Tree &#8212; Penambangan Data</title>
+    <title>Decision Tree &#8212; Penambangan Data</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="UTS K-Nearest Neighbor" href="UTS%20K-NN.html" />
-    <link rel="prev" title="T5. Naive Bayes" href="Tugas%205.html" />
+    <link rel="prev" title="Naive Bayes" href="Tugas%205.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -121,44 +121,32 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%201.html">
-   <strong>
-    Deskriptif
-   </strong>
+   Deskriptif
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%202.html">
-   <strong>
-    T2. Deskritisasi Data
-   </strong>
+   Deskritisasi
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%203.html">
-   <strong>
-    T3. KNN (K-Nearest Neighbor)
-   </strong>
+   K-Nearest Neighbor
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%204.html">
-   <strong>
-    T4. K-Mean Clustering
-   </strong>
+   K-Mean Clustering
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%205.html">
-   <strong>
-    T5. Naive Bayes
-   </strong>
+   Naive Bayes
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   <strong>
-    T6. Decision Tree
-   </strong>
+   Decision Tree
   </a>
  </li>
  <li class="toctree-l1">
@@ -177,21 +165,22 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%207.html">
-   T7. Preprocessing &amp; Normalisasi
+   Preprocessing &amp; Normalisasi Diabetic
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%208.html">
-   <strong>
-    T8. Bagging
-   </strong>
+   Bagging
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%209.html">
-   <strong>
-    T9. Ensemble Stacking
-   </strong>
+   Backpropagation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Tugas%2010.html">
+   Linear Regresion
   </a>
  </li>
 </ul>
@@ -416,7 +405,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>T6. Decision Tree</h1>
+                <h1>Decision Tree</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -443,12 +432,13 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="t6-decision-tree">
-<h1><strong>T6. Decision Tree</strong><a class="headerlink" href="#t6-decision-tree" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="decision-tree">
+<h1>Decision Tree<a class="headerlink" href="#decision-tree" title="Permalink to this headline">#</a></h1>
 <p>Nama  : Kharisma Intan Safitri<br />
 NIM   : 200411100010<br />
 Kelas : Penambangan Data A<br />
 Tanggal : 31 Oktober 2022</p>
+<p><strong>Decision tree</strong> adalah algoritma machine learning yang menggunakan seperangkat aturan untuk membuat keputusan dengan struktur seperti pohon yang memodelkan kemungkinan hasil, biaya sumber daya, utilitas dan kemungkinan konsekuensi atau resiko. Konsepnya adalah dengan cara menyajikan algoritma dengan pernyataan bersyarat, yang meliputi cabang untuk mewakili langkah-langkah pengambilan keputusan yang dapat mengarah pada hasil yang menguntungkan.</p>
 <section id="topik-data">
 <h2><strong>Topik data:</strong><a class="headerlink" href="#topik-data" title="Permalink to this headline">#</a></h2>
 <p>Pengelompokan jenis Bunga Iris berdasarkan panjang dan lebar kelopak serta daun kelopak.</p>
@@ -471,7 +461,7 @@ Tanggal : 31 Oktober 2022</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-49e334c9-1fdc-416f-9135-33d35c71257d">
+  <div id="df-0e0e4c4f-208d-406b-96ec-488629fbb312">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -591,7 +581,7 @@ Tanggal : 31 Oktober 2022</p>
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-49e334c9-1fdc-416f-9135-33d35c71257d')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-0e0e4c4f-208d-406b-96ec-488629fbb312')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -642,12 +632,12 @@ Tanggal : 31 Oktober 2022</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-49e334c9-1fdc-416f-9135-33d35c71257d button.colab-df-convert');
+          document.querySelector('#df-0e0e4c4f-208d-406b-96ec-488629fbb312 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-49e334c9-1fdc-416f-9135-33d35c71257d');
+          const element = document.querySelector('#df-0e0e4c4f-208d-406b-96ec-488629fbb312');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -710,7 +700,7 @@ Tanggal : 31 Oktober 2022</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/Tugas 6_8_0.svg" src="_images/Tugas 6_8_0.svg" /></div>
+<img alt="_images/Tugas 6_9_0.svg" src="_images/Tugas 6_9_0.svg" /></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -740,7 +730,7 @@ Tanggal : 31 Oktober 2022</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-6690374e-9203-48d0-bcc3-453a6e73154b">
+  <div id="df-3309485f-a024-4fec-9fb6-25e58598b9fc">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -918,7 +908,7 @@ Tanggal : 31 Oktober 2022</p>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-6690374e-9203-48d0-bcc3-453a6e73154b')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-3309485f-a024-4fec-9fb6-25e58598b9fc')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -969,12 +959,12 @@ Tanggal : 31 Oktober 2022</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-6690374e-9203-48d0-bcc3-453a6e73154b button.colab-df-convert');
+          document.querySelector('#df-3309485f-a024-4fec-9fb6-25e58598b9fc button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-6690374e-9203-48d0-bcc3-453a6e73154b');
+          const element = document.querySelector('#df-3309485f-a024-4fec-9fb6-25e58598b9fc');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1051,7 +1041,7 @@ dari data prediksi 29 / 30 * 100% = 96.67%
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><strong>T5. Naive Bayes</strong></p>
+            <p class="prev-next-title">Naive Bayes</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="UTS%20K-NN.html" title="next page">

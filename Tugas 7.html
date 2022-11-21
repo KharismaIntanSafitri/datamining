@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>T7. Preprocessing &amp; Normalisasi &#8212; Penambangan Data</title>
+    <title>Preprocessing &amp; Normalisasi Diabetic &#8212; Penambangan Data</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -54,7 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="T8. Bagging" href="Tugas%208.html" />
+    <link rel="next" title="Bagging" href="Tugas%208.html" />
     <link rel="prev" title="UTS Desision Tree" href="UTS%20Desison%20Tree.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -123,44 +123,32 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%201.html">
-   <strong>
-    Deskriptif
-   </strong>
+   Deskriptif
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%202.html">
-   <strong>
-    T2. Deskritisasi Data
-   </strong>
+   Deskritisasi
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%203.html">
-   <strong>
-    T3. KNN (K-Nearest Neighbor)
-   </strong>
+   K-Nearest Neighbor
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%204.html">
-   <strong>
-    T4. K-Mean Clustering
-   </strong>
+   K-Mean Clustering
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%205.html">
-   <strong>
-    T5. Naive Bayes
-   </strong>
+   Naive Bayes
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%206.html">
-   <strong>
-    T6. Decision Tree
-   </strong>
+   Decision Tree
   </a>
  </li>
  <li class="toctree-l1">
@@ -179,23 +167,22 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   <strong>
-    T7. Preprocessing &amp; Normalisasi
-   </strong>
+   Preprocessing &amp; Normalisasi Diabetic
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%208.html">
-   <strong>
-    T8. Bagging
-   </strong>
+   Bagging
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%209.html">
-   <strong>
-    T9. Ensemble Stacking
-   </strong>
+   Backpropagation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Tugas%2010.html">
+   Linear Regresion
   </a>
  </li>
 </ul>
@@ -406,9 +393,7 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   <strong>
-    T7. Preprocessing &amp; Normalisasi
-   </strong>
+   Preprocessing &amp; Normalisasi Diabetic
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
@@ -500,7 +485,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>T7. Preprocessing & Normalisasi</h1>
+                <h1>Preprocessing & Normalisasi Diabetic</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -512,9 +497,7 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   <strong>
-    T7. Preprocessing &amp; Normalisasi
-   </strong>
+   Preprocessing &amp; Normalisasi Diabetic
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
@@ -607,8 +590,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="t7-preprocessing-normalisasi">
-<h1><strong>T7. Preprocessing &amp; Normalisasi</strong><a class="headerlink" href="#t7-preprocessing-normalisasi" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="preprocessing-normalisasi-diabetic">
+<h1>Preprocessing &amp; Normalisasi Diabetic<a class="headerlink" href="#preprocessing-normalisasi-diabetic" title="Permalink to this headline">#</a></h1>
 <p>Nama  : Kharisma Intan Safitri<br />
 NIM   : 200411100010<br />
 Kelas : Penambangan Data A<br />
@@ -616,6 +599,8 @@ Tanggal :</p>
 <section id="topik-data">
 <h2><strong>Topik data:</strong><a class="headerlink" href="#topik-data" title="Permalink to this headline">#</a></h2>
 <p>Prediksi penyakit diabetes, apakah seorang pasien tersebut postif atau negatif diabetes.</p>
+<p><strong>Preprocessing</strong> adalah proses menyiapkan data dasar atau inti sebelum melakukan proses lainnya.Pada dasarnya data preprocessing dapat dilakukan dengan membuang data yang tidak sesuai atau mengubah data menjadi bentuk yang lebih mudah untuk diproses oleh sistem.</p>
+<p>Proses pembersihan meliputi penghilangan duplikasi data, pengisian atau penghapusan data yang hilang, pembetulan data yang tidak konsisten, dan pembetulan salah ketik. seperti namanya, normalisasi dapat diartikan secara sederhana sebagai proses menormalkan data dari hal-hal yang tidak sesuai.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
@@ -680,7 +665,7 @@ Tanggal :</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-305fcdd3-5046-4d51-b1dd-e904cee466dd">
+  <div id="df-a72daf11-6d67-43f9-acc1-7d210470035c">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -980,7 +965,7 @@ Tanggal :</p>
 </table>
 <p>1151 rows × 20 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-305fcdd3-5046-4d51-b1dd-e904cee466dd')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-a72daf11-6d67-43f9-acc1-7d210470035c')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1031,12 +1016,12 @@ Tanggal :</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-305fcdd3-5046-4d51-b1dd-e904cee466dd button.colab-df-convert');
+          document.querySelector('#df-a72daf11-6d67-43f9-acc1-7d210470035c button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-305fcdd3-5046-4d51-b1dd-e904cee466dd');
+          const element = document.querySelector('#df-a72daf11-6d67-43f9-acc1-7d210470035c');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1066,7 +1051,7 @@ Tanggal :</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-3d68214b-5a3e-40f0-8988-eb3ba0a0caf1">
+  <div id="df-1e71ca2d-e38d-4780-840c-99d063e25a25">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1354,7 +1339,7 @@ Tanggal :</p>
 </table>
 <p>1151 rows × 19 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-3d68214b-5a3e-40f0-8988-eb3ba0a0caf1')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-1e71ca2d-e38d-4780-840c-99d063e25a25')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1405,12 +1390,12 @@ Tanggal :</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-3d68214b-5a3e-40f0-8988-eb3ba0a0caf1 button.colab-df-convert');
+          document.querySelector('#df-1e71ca2d-e38d-4780-840c-99d063e25a25 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-3d68214b-5a3e-40f0-8988-eb3ba0a0caf1');
+          const element = document.querySelector('#df-1e71ca2d-e38d-4780-840c-99d063e25a25');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1455,7 +1440,7 @@ Tanggal :</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-725428bf-b9fd-4ecb-9106-704b791cf6dc">
+  <div id="df-72e984ca-6542-45cb-8c1f-9f3d8c99e7a6">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1720,7 +1705,7 @@ Tanggal :</p>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-725428bf-b9fd-4ecb-9106-704b791cf6dc')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-72e984ca-6542-45cb-8c1f-9f3d8c99e7a6')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1771,12 +1756,12 @@ Tanggal :</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-725428bf-b9fd-4ecb-9106-704b791cf6dc button.colab-df-convert');
+          document.querySelector('#df-72e984ca-6542-45cb-8c1f-9f3d8c99e7a6 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-725428bf-b9fd-4ecb-9106-704b791cf6dc');
+          const element = document.querySelector('#df-72e984ca-6542-45cb-8c1f-9f3d8c99e7a6');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1897,22 +1882,20 @@ Tanggal :</p>
 [CV 1/3] END ....n_neighbors=3, weights=uniform;, score=0.632 total time=   0.0s
 [CV 2/3] END ....n_neighbors=3, weights=uniform;, score=0.625 total time=   0.0s
 [CV 3/3] END ....n_neighbors=3, weights=uniform;, score=0.627 total time=   0.0s
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[CV 1/3] END ...n_neighbors=5, weights=distance;, score=0.661 total time=   0.0s
+[CV 1/3] END ...n_neighbors=5, weights=distance;, score=0.661 total time=   0.0s
 [CV 2/3] END ...n_neighbors=5, weights=distance;, score=0.638 total time=   0.0s
 [CV 3/3] END ...n_neighbors=5, weights=distance;, score=0.627 total time=   0.0s
 [CV 1/3] END ....n_neighbors=5, weights=uniform;, score=0.658 total time=   0.0s
-[CV 2/3] END ....n_neighbors=5, weights=uniform;, score=0.612 total time=   0.0s
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[CV 2/3] END ....n_neighbors=5, weights=uniform;, score=0.612 total time=   0.0s
 [CV 3/3] END ....n_neighbors=5, weights=uniform;, score=0.631 total time=   0.0s
 [CV 1/3] END ...n_neighbors=7, weights=distance;, score=0.658 total time=   0.0s
 [CV 2/3] END ...n_neighbors=7, weights=distance;, score=0.674 total time=   0.0s
 [CV 3/3] END ...n_neighbors=7, weights=distance;, score=0.650 total time=   0.0s
 [CV 1/3] END ....n_neighbors=7, weights=uniform;, score=0.655 total time=   0.0s
 [CV 2/3] END ....n_neighbors=7, weights=uniform;, score=0.668 total time=   0.0s
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[CV 3/3] END ....n_neighbors=7, weights=uniform;, score=0.667 total time=   0.0s
+[CV 3/3] END ....n_neighbors=7, weights=uniform;, score=0.667 total time=   0.0s
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>GridSearchCV(cv=3, estimator=KNeighborsClassifier(),
@@ -2010,37 +1993,29 @@ Tanggal :</p>
 [CV 2/3] END ...n_neighbors=2, weights=distance;, score=0.560 total time=   0.0s
 [CV 3/3] END ...n_neighbors=2, weights=distance;, score=0.575 total time=   0.0s
 [CV 1/3] END ....n_neighbors=2, weights=uniform;, score=0.599 total time=   0.0s
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[CV 2/3] END ....n_neighbors=2, weights=uniform;, score=0.612 total time=   0.0s
+[CV 2/3] END ....n_neighbors=2, weights=uniform;, score=0.612 total time=   0.0s
 [CV 3/3] END ....n_neighbors=2, weights=uniform;, score=0.569 total time=   0.0s
 [CV 1/3] END ...n_neighbors=3, weights=distance;, score=0.606 total time=   0.0s
 [CV 2/3] END ...n_neighbors=3, weights=distance;, score=0.573 total time=   0.0s
 [CV 3/3] END ...n_neighbors=3, weights=distance;, score=0.605 total time=   0.0s
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[CV 1/3] END ....n_neighbors=3, weights=uniform;, score=0.599 total time=   0.0s
+[CV 1/3] END ....n_neighbors=3, weights=uniform;, score=0.599 total time=   0.0s
 [CV 2/3] END ....n_neighbors=3, weights=uniform;, score=0.567 total time=   0.0s
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[CV 3/3] END ....n_neighbors=3, weights=uniform;, score=0.595 total time=   0.0s
+[CV 3/3] END ....n_neighbors=3, weights=uniform;, score=0.595 total time=   0.0s
 [CV 1/3] END ...n_neighbors=5, weights=distance;, score=0.635 total time=   0.0s
 [CV 2/3] END ...n_neighbors=5, weights=distance;, score=0.619 total time=   0.0s
 [CV 3/3] END ...n_neighbors=5, weights=distance;, score=0.634 total time=   0.0s
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[CV 1/3] END ....n_neighbors=5, weights=uniform;, score=0.632 total time=   0.0s
-[CV 2/3] END ....n_neighbors=5, weights=uniform;, score=0.612 total time=   0.0s
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[CV 2/3] END ....n_neighbors=5, weights=uniform;, score=0.612 total time=   0.0s
 [CV 3/3] END ....n_neighbors=5, weights=uniform;, score=0.621 total time=   0.0s
 [CV 1/3] END ...n_neighbors=7, weights=distance;, score=0.638 total time=   0.0s
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[CV 2/3] END ...n_neighbors=7, weights=distance;, score=0.638 total time=   0.0s
+[CV 2/3] END ...n_neighbors=7, weights=distance;, score=0.638 total time=   0.0s
 [CV 3/3] END ...n_neighbors=7, weights=distance;, score=0.608 total time=   0.0s
 [CV 1/3] END ....n_neighbors=7, weights=uniform;, score=0.635 total time=   0.0s
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[CV 2/3] END ....n_neighbors=7, weights=uniform;, score=0.635 total time=   0.0s
+[CV 2/3] END ....n_neighbors=7, weights=uniform;, score=0.635 total time=   0.0s
 [CV 3/3] END ....n_neighbors=7, weights=uniform;, score=0.595 total time=   0.0s
 </pre></div>
 </div>
@@ -2190,7 +2165,7 @@ Tanggal :</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-c68791b0-4e15-4032-8b37-3a95b278d819">
+  <div id="df-3968e819-1f01-464c-b7b8-64f01be4db6b">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2455,7 +2430,7 @@ Tanggal :</p>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-c68791b0-4e15-4032-8b37-3a95b278d819')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-3968e819-1f01-464c-b7b8-64f01be4db6b')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2506,12 +2481,12 @@ Tanggal :</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-c68791b0-4e15-4032-8b37-3a95b278d819 button.colab-df-convert');
+          document.querySelector('#df-3968e819-1f01-464c-b7b8-64f01be4db6b button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-c68791b0-4e15-4032-8b37-3a95b278d819');
+          const element = document.querySelector('#df-3968e819-1f01-464c-b7b8-64f01be4db6b');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2647,7 +2622,7 @@ Tanggal :</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-bfb571a4-b185-4b84-a746-7879bf38f1fa">
+  <div id="df-8004feb2-02bc-4317-8433-1d7ac6bffdb8">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2947,7 +2922,7 @@ Tanggal :</p>
 </table>
 <p>1151 rows × 20 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-bfb571a4-b185-4b84-a746-7879bf38f1fa')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-8004feb2-02bc-4317-8433-1d7ac6bffdb8')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2998,12 +2973,12 @@ Tanggal :</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-bfb571a4-b185-4b84-a746-7879bf38f1fa button.colab-df-convert');
+          document.querySelector('#df-8004feb2-02bc-4317-8433-1d7ac6bffdb8 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-bfb571a4-b185-4b84-a746-7879bf38f1fa');
+          const element = document.querySelector('#df-8004feb2-02bc-4317-8433-1d7ac6bffdb8');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -3033,7 +3008,7 @@ Tanggal :</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-3ea2750b-dd9e-4d43-9ca2-911b545dd414">
+  <div id="df-36212c72-cea4-4f72-9a8e-c54d151ef321">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -3321,7 +3296,7 @@ Tanggal :</p>
 </table>
 <p>1151 rows × 19 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-3ea2750b-dd9e-4d43-9ca2-911b545dd414')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-36212c72-cea4-4f72-9a8e-c54d151ef321')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -3372,12 +3347,12 @@ Tanggal :</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-3ea2750b-dd9e-4d43-9ca2-911b545dd414 button.colab-df-convert');
+          document.querySelector('#df-36212c72-cea4-4f72-9a8e-c54d151ef321 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-3ea2750b-dd9e-4d43-9ca2-911b545dd414');
+          const element = document.querySelector('#df-36212c72-cea4-4f72-9a8e-c54d151ef321');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -3420,7 +3395,7 @@ Tanggal :</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-ac89e81f-3b79-4d5a-8ea9-874d76e6aefc">
+  <div id="df-aded3914-88e5-4a04-8eeb-b6aed6c6f8ec">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -3685,7 +3660,7 @@ Tanggal :</p>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-ac89e81f-3b79-4d5a-8ea9-874d76e6aefc')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-aded3914-88e5-4a04-8eeb-b6aed6c6f8ec')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -3736,12 +3711,12 @@ Tanggal :</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-ac89e81f-3b79-4d5a-8ea9-874d76e6aefc button.colab-df-convert');
+          document.querySelector('#df-aded3914-88e5-4a04-8eeb-b6aed6c6f8ec button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-ac89e81f-3b79-4d5a-8ea9-874d76e6aefc');
+          const element = document.querySelector('#df-aded3914-88e5-4a04-8eeb-b6aed6c6f8ec');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -3801,7 +3776,7 @@ Tanggal :</p>
     <a class='right-next' id="next-link" href="Tugas%208.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>T8. Bagging</strong></p>
+        <p class="prev-next-title">Bagging</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
