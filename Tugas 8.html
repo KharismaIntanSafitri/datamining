@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Bagging &#8212; Penambangan Data</title>
+    <title>Topik data: &#8212; Penambangan Data</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -153,16 +153,12 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="UTS%20K-NN.html">
-   <strong>
-    UTS K-Nearest Neighbor
-   </strong>
+   UTS K-Nearest Neighbor
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="UTS%20Desison%20Tree.html">
-   <strong>
-    UTS Desision Tree
-   </strong>
+   UTS Desision Tree
   </a>
  </li>
  <li class="toctree-l1">
@@ -172,7 +168,9 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Bagging
+   <strong>
+    Topik data:
+   </strong>
   </a>
  </li>
  <li class="toctree-l1">
@@ -391,92 +389,97 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#topik-data">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
    <strong>
     Topik data:
    </strong>
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
+ <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#normalisasi">
    Normalisasi
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#normalisasi-min-and-max">
      Normalisasi Min and Max
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
+   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#save-model-preprocessing">
      Save Model Preprocessing
     </a>
    </li>
   </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
+ <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#encoder-label">
    Encoder Label
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
+ <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#split-dataset">
    Split Dataset
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#gaussian-naive-bayes">
      Gaussian Naive Bayes
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
+   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#save-mode-gaussian">
      Save Mode Gaussian
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
+   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#k-nearest-neighbour-knn">
      K-Nearest Neighbour (KNN)
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
+   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#save-model-knn">
      Save Model KNN
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
+   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#bagging-classifier">
      Bagging Classifier
     </a>
    </li>
   </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
+ <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#randomforest">
    RandomForest
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
+ <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id1">
    Split Dataset
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
+ <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
    Gaussian Naive Bayes
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id3">
      Save Mode Gaussian
     </a>
    </li>
   </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
+ <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id4">
    K-Nearest Neighbour (KNN)
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bagging">
+   Bagging
   </a>
  </li>
 </ul>
@@ -488,7 +491,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Bagging</h1>
+                <h1>Topik data:</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -498,92 +501,97 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#topik-data">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
    <strong>
     Topik data:
    </strong>
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
+ <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#normalisasi">
    Normalisasi
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#normalisasi-min-and-max">
      Normalisasi Min and Max
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
+   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#save-model-preprocessing">
      Save Model Preprocessing
     </a>
    </li>
   </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
+ <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#encoder-label">
    Encoder Label
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
+ <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#split-dataset">
    Split Dataset
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#gaussian-naive-bayes">
      Gaussian Naive Bayes
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
+   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#save-mode-gaussian">
      Save Mode Gaussian
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
+   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#k-nearest-neighbour-knn">
      K-Nearest Neighbour (KNN)
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
+   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#save-model-knn">
      Save Model KNN
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
+   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#bagging-classifier">
      Bagging Classifier
     </a>
    </li>
   </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
+ <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#randomforest">
    RandomForest
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
+ <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id1">
    Split Dataset
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
+ <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
    Gaussian Naive Bayes
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id3">
      Save Mode Gaussian
     </a>
    </li>
   </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
+ <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id4">
    K-Nearest Neighbour (KNN)
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bagging">
+   Bagging
   </a>
  </li>
 </ul>
@@ -596,14 +604,13 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="bagging">
-<h1>Bagging<a class="headerlink" href="#bagging" title="Permalink to this headline">#</a></h1>
+  <p><strong>Bagging</strong></p>
 <p>Nama  : Kharisma Intan Safitri<br />
 NIM   : 200411100010<br />
 Kelas : Penambangan Data A<br />
 Tanggal :</p>
 <section id="topik-data">
-<h2><strong>Topik data:</strong><a class="headerlink" href="#topik-data" title="Permalink to this headline">#</a></h2>
+<h1><strong>Topik data:</strong><a class="headerlink" href="#topik-data" title="Permalink to this headline">#</a></h1>
 <p>Prediksi penyakit diabetes, apakah seorang pasien tersebut postif atau negatif diabetes.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1462,9 +1469,9 @@ Tanggal :</p>
 </div>
 </section>
 <section id="normalisasi">
-<h2>Normalisasi<a class="headerlink" href="#normalisasi" title="Permalink to this headline">#</a></h2>
+<h1>Normalisasi<a class="headerlink" href="#normalisasi" title="Permalink to this headline">#</a></h1>
 <section id="normalisasi-min-and-max">
-<h3>Normalisasi Min and Max<a class="headerlink" href="#normalisasi-min-and-max" title="Permalink to this headline">#</a></h3>
+<h2>Normalisasi Min and Max<a class="headerlink" href="#normalisasi-min-and-max" title="Permalink to this headline">#</a></h2>
 <div class="math notranslate nohighlight">
 \[ X'= \frac{x-x_{min}}{x_{max}-x_{min}}\]</div>
 <div class="cell docutils container">
@@ -1858,7 +1865,7 @@ Tanggal :</p>
 </div>
 </section>
 <section id="save-model-preprocessing">
-<h3>Save Model Preprocessing<a class="headerlink" href="#save-model-preprocessing" title="Permalink to this headline">#</a></h3>
+<h2>Save Model Preprocessing<a class="headerlink" href="#save-model-preprocessing" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;normalisai.sav&quot;</span>
@@ -1875,7 +1882,7 @@ Tanggal :</p>
 </section>
 </section>
 <section id="encoder-label">
-<h2>Encoder Label<a class="headerlink" href="#encoder-label" title="Permalink to this headline">#</a></h2>
+<h1>Encoder Label<a class="headerlink" href="#encoder-label" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
@@ -1928,7 +1935,7 @@ Tanggal :</p>
 </div>
 </section>
 <section id="split-dataset">
-<h2>Split Dataset<a class="headerlink" href="#split-dataset" title="Permalink to this headline">#</a></h2>
+<h1>Split Dataset<a class="headerlink" href="#split-dataset" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -1939,7 +1946,7 @@ Tanggal :</p>
 </div>
 </div>
 <section id="gaussian-naive-bayes">
-<h3>Gaussian Naive Bayes<a class="headerlink" href="#gaussian-naive-bayes" title="Permalink to this headline">#</a></h3>
+<h2>Gaussian Naive Bayes<a class="headerlink" href="#gaussian-naive-bayes" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Model Select</span>
@@ -2109,7 +2116,7 @@ Tanggal :</p>
 </div>
 </section>
 <section id="save-mode-gaussian">
-<h3>Save Mode Gaussian<a class="headerlink" href="#save-mode-gaussian" title="Permalink to this headline">#</a></h3>
+<h2>Save Mode Gaussian<a class="headerlink" href="#save-mode-gaussian" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">filemodelGaussian</span> <span class="o">=</span> <span class="s1">&#39;modelGaussian.pkl&#39;</span>
@@ -2125,7 +2132,7 @@ Tanggal :</p>
 </div>
 </section>
 <section id="k-nearest-neighbour-knn">
-<h3>K-Nearest Neighbour (KNN)<a class="headerlink" href="#k-nearest-neighbour-knn" title="Permalink to this headline">#</a></h3>
+<h2>K-Nearest Neighbour (KNN)<a class="headerlink" href="#k-nearest-neighbour-knn" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#KNN Library</span>
@@ -2190,7 +2197,7 @@ Tanggal :</p>
 </div>
 </section>
 <section id="save-model-knn">
-<h3>Save Model KNN<a class="headerlink" href="#save-model-knn" title="Permalink to this headline">#</a></h3>
+<h2>Save Model KNN<a class="headerlink" href="#save-model-knn" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">filenameModelKnn</span> <span class="o">=</span> <span class="s1">&#39;modelKnn.pkl&#39;</span>
@@ -2225,7 +2232,7 @@ Tanggal :</p>
 </div>
 </section>
 <section id="bagging-classifier">
-<h3>Bagging Classifier<a class="headerlink" href="#bagging-classifier" title="Permalink to this headline">#</a></h3>
+<h2>Bagging Classifier<a class="headerlink" href="#bagging-classifier" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gaussian</span> <span class="o">=</span> <span class="n">gaussian</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">training</span><span class="p">,</span> <span class="n">training_label</span><span class="p">)</span>
@@ -2807,7 +2814,7 @@ acuracy n = 499 = 0.6406926406926406
 </section>
 </section>
 <section id="randomforest">
-<h2>RandomForest<a class="headerlink" href="#randomforest" title="Permalink to this headline">#</a></h2>
+<h1>RandomForest<a class="headerlink" href="#randomforest" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
@@ -3375,7 +3382,7 @@ acuracy n = 499 = 0.645021645021645
 </div>
 </section>
 <section id="id1">
-<h2>Split Dataset<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+<h1>Split Dataset<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -3387,7 +3394,7 @@ acuracy n = 499 = 0.645021645021645
 </div>
 </section>
 <section id="id2">
-<h2>Gaussian Naive Bayes<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+<h1>Gaussian Naive Bayes<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Model Select</span>
@@ -3556,7 +3563,7 @@ acuracy n = 499 = 0.645021645021645
 </div>
 </div>
 <section id="id3">
-<h3>Save Mode Gaussian<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
+<h2>Save Mode Gaussian<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">filemodelGaussian</span> <span class="o">=</span> <span class="s1">&#39;modelGaussian.pkl&#39;</span>
@@ -3573,7 +3580,7 @@ acuracy n = 499 = 0.645021645021645
 </section>
 </section>
 <section id="id4">
-<h2>K-Nearest Neighbour (KNN)<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h2>
+<h1>K-Nearest Neighbour (KNN)<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#KNN Library</span>
@@ -3657,6 +3664,9 @@ acuracy n = 499 = 0.645021645021645
 </div>
 </div>
 </div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="bagging">
+<h1>Bagging<a class="headerlink" href="#bagging" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;acuracy = </span><span class="si">{</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">test_label</span><span class="p">,</span> <span class="n">pred_test</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span> <span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
@@ -4233,7 +4243,7 @@ acuracy n = 499 = 0.6406926406926406
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/Tugas 8_81_0.png" src="_images/Tugas 8_81_0.png" />
+<img alt="_images/Tugas 8_82_0.png" src="_images/Tugas 8_82_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -4798,7 +4808,7 @@ acuracy n = 499 = 0.645021645021645
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/Tugas 8_88_0.png" src="_images/Tugas 8_88_0.png" />
+<img alt="_images/Tugas 8_89_0.png" src="_images/Tugas 8_89_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -4814,7 +4824,6 @@ acuracy n = 499 = 0.645021645021645
 </div>
 </div>
 </div>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
